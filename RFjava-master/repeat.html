@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Repeat Numbers</title>
+	<style>
+	body {
+		background-color: lightcyan;
+	}
+</style>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+
+</head>
+<body>
+
+<a href="adding.html">Add Two Numbers</a><br/>
+<a href="repeat.html">Repeating Numbers</a><br/>
+<a href="romannumeral.html">Roman Numeral Converter</a><br/>
+<a href="tip.html">Calculate a Tip</a><br/>
+<a href="triangle.html">Compute the Area of a Right Triangle</a><br/>
+<a href="home.html">Home</a><br/><br/>
+
+<img src="goat.png" width="830" height="530" class="clsGoat"><br/>
+
+<img src="box1.png" width="220" height="135" class="clsBox1">
+
+<h3 class="clsRepeatingNumbersText">Repeating Numbers</h3>
+
+<input class="clsInput3" type="text" id="textStuff">
+<button class="clsBtnRepeat" onclick="doStuff(document.getElementById('textStuff').value)">go</button>
+<p class="clsRepeatAnswer" id="putHere"></p>
+
+
+<script>
+
+function doStuff(textStuff){
+	document.getElementById('putHere').innerHTML=textStuff;
+}
+</script>
+
+</body>
+</html>

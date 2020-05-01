@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Roman Number Converter</title>
+<style>
+	body {
+		background-color: lightblue;
+	}
+</style>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+
+</head>
+<body>
+
+<a href="adding.html">Add Two Numbers</a><br/>
+<a href="repeat.html">Repeating Numbers</a><br/>
+<a href="romannumeral.html">Roman Numeral Converter</a><br/>
+<a href="tip.html">Calculate a Tip</a><br/>
+<a href="triangle.html">Compute the Area of a Right Triangle</a><br/>
+<a href="home.html">Home</a><br/><br/>
+
+
+<img src="puppy.png" width="900" height="530" class="clsPuppy"><br/>
+
+<img src="box3.png" width="280" height="135" class="clsBox3">
+
+<h3 class="clsRomanText">Roman Numeral Converter</h3>
+
+<p><input class="clsRomanInput" type="text" id="number"></p>
+<p><button class="clsBtnConvert" onclick="convertRoman(document.getElementById('number').value)">Convert</button></p>
+<p class="clsRomanNumber" id="romanNumber"></p>
+
+
+<script>
+function convertRoman(number){
+	var romanNumber = "";
+	if (number < 5) {
+		for (var i = number - 1; i >= 0; i--) {
+			romanNumber = romanNumber+="I";
+		} 
+		} else {
+			romanNumber = "Pick a number 1-4"
+
+	}
+	document.getElementById('romanNumber').innerHTML = romanNumber;
+}
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Numbers</title>
+<style>
+	body {
+		background-color: thistle;
+	}
+</style>
+
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+
+</head>
+<body>	
+
+<a href="adding.html">Add Two Numbers</a><br/>
+<a href="repeat.html">Repeating Numbers</a><br/>
+<a href="romannumeral.html">Roman Numeral Converter</a><br/>
+<a href="tip.html">Calculate a Tip</a><br/>
+<a href="triangle.html">Compute the Area of a Right Triangle</a><br/>
+<a href="home.html">Home</a><br/><br/>
+
+<img src="duck.png" width="1000" height="530" class="clsDuck"><br/>
+
+<img src="box2.png" width="230" height="180" class="clsBox2">
+
+<h3 class="clsAddNumbersText">Add Two Numbers</h3>
+
+<input type="text" id="valueA" class="clsInput1"><br/>
+<input type="text" id="valueB" class="clsInput2"><br/>
+
+
+<button class="clsAddBtn" onclick="
+	addNumbers(
+			document.getElementById('valueA').value,
+			document.getElementById('valueB').value
+				)">add </button>
+
+
+<p class="clsAnswer" id="putHere"></p>
+
+
+<script>
+
+function addNumbers(a,b){
+	var a = Number(a);
+	var b = Number(b);
+	var c = a + b;
+	document.getElementById('putHere').innerHTML = c;
+	}
+
+</script>
+
+</body>
+</html>
+

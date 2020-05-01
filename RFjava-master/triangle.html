@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Compute the Area</title>
+<style>
+	body {
+		background-color: lightyellow;
+	}
+</style>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+
+</head>
+<body>
+
+<a href="adding.html">Add Two Numbers</a><br/>
+<a href="repeat.html">Repeating Numbers</a> <br/>
+<a href="romannumeral.html">Roman Numeral Converter</a><br/>
+<a href="tip.html">Calculate a Tip</a><br/>
+<a href="triangle.html">Compute the Area of a Right Triangle</a><br/>
+<a href="home.html">Home</a><br/><br/>
+
+<img src="panda.png" width="700" height="530" class="clsPanda"><br/>
+
+<img src="box5.png" width="370" height="170" class="clsBox5">
+
+<h3 class="clsTriangleText">Compute the Area of a Right Triangle</h3>
+
+<p class="clsLSA"> Length of Side A: <input type="text" id="sideA"></p>
+<p class="clsLSB">Length of Side B: <input type="text" id="sideB"></p>
+<p><button class="clsTriangleBtn" onclick="triangleArea(document.getElementById('sideA').value,document.getElementById('sideB').value)">Compute</button></p>
+<p class="clsTriangleArea" id="triangleArea"></p>
+
+<script>
+
+function triangleArea(sideA, sideB){
+	var length;
+	length = sideA * sideB * 0.5;
+	length = "Area is " + length;
+	document.getElementById('triangleArea').innerHTML = length;
+}
+
+</script>
+
+</body>
+</html>
